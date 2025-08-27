@@ -1,17 +1,21 @@
-# Crypto-Anomaly-Detector-V5
+# Crypto Anomaly Detector — V5
 
-
-A reproducible pipeline for detecting anomalies in cryptocurrency time series.  
-It combines statistical indicators, classical anomaly detection models, and an optional LSTM autoencoder.  
-Results are visualized with Plotly and optionally explored via a Gradio UI.
+A reproducible pipeline for detecting anomalies in cryptocurrency time-series data.  
+Combines technical indicators, classical models, and (optionally) a LSTM autoencoder for robust detection.
 
 ## Features
-- **Data**: CoinGecko (primary) → yfinance (fallback)  
-- **Indicators**: RSI, MACD, ATR, Bollinger Bands, OBV + basic statistical features  
-- **Models**: Z-score, Isolation Forest, LOF, One-Class SVM, (optional) LSTM Autoencoder  
-- **Scoring**: Rank-sum ensemble → `anomaly_score_v5`  
-- **Visualization**: Plotly time series with anomaly markers, event overlays  
-- **Artifacts**:  
-  - `results_v5.csv` (all features + scores)  
-  - `metadata.json` (config, cutoff, reproducibility)
 
+- **Data sources**: CoinGecko (primary) → yfinance as fallback  
+- **Indicators**: RSI, MACD, ATR, Bollinger Bands, OBV + essential statistical features  
+- **Models**: Z-score, Isolation Forest, LOF, One-Class SVM, (optional) LSTM Autoencoder  
+- **Ensemble Scoring**: Rank-sum to compute a composite `anomaly_score_v5`  
+- **Visualization**: Interactive Plotly charts showing anomalies and key event overlays  
+- **Artifacts**:  
+  - `results_v5.csv`: consolidated scores and features  
+  - `metadata.json`: includes run parameters, cutoff value, and reproducibility info  
+
+## Quickstart (Colab or local)
+
+```bash
+pip install -r requirements.txt
+jupyter notebook crypto_anomaly_detection.ipynb
