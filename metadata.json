@@ -1,0 +1,20 @@
+{
+  "SYMBOL": "BTCUSDT",
+  "INTERVAL": "1h",
+  "LIMIT": 800,
+  "Q": 0.97,
+  "CONTAM": "auto",
+  "AE_SEQ": 24,
+  "AE_EPOCH": 6,
+  "SEED": 42,
+  "run_time": "2025-08-27T10:19:30.776914+00:00",
+  "parts_used": [
+    "zscore_score",
+    "iso_score",
+    "lof_score",
+    "ocs_score",
+    "iso_scaled",
+    "ae_score_improved"
+  ],
+  "cutoff_v5": 0.9896874998453614
+}
